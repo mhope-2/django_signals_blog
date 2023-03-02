@@ -6,7 +6,7 @@ from .models import Employee
 # Create your tests here.
 class TestAppEndpoints(APITestCase):
 
-    def test_request_phone_verify_for_new_profile(self):
+    def test_employee_creation_auto_creates_related_profile(self):
         """
         test EmployeeProfile object created
         on Employee object post save
