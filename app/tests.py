@@ -12,6 +12,7 @@ class TestAppEndpoints(APITestCase):
         on Employee object post save
         :return:
         """
+        # mimic and persist an Employee object
         emp_obj = G(Employee, first_name="John", last_name="Doe", email="jdoe@jdoe.com")
 
         # reload Employee model values from the database

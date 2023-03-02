@@ -38,6 +38,7 @@ class EmployeeProfile(TimeStampedModel):
         max_length=30, choices=Genders.choices,
         blank=True, null=True
     )
+    # related_name will be used in reverse access in the test
     employee = OneToOneField(
         Employee, related_name="profile",
         on_delete=models.deletion.PROTECT
