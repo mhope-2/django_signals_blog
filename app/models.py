@@ -33,7 +33,7 @@ class EmployeeProfile(TimeStampedModel):
         max_length=50, choices=Teams.choices,
         blank=True, null=True
     )
-    address = models.EmailField(unique=True)
+    address = models.CharField(blank=True, null=True)
     gender = models.CharField(
         max_length=30, choices=Genders.choices,
         blank=True, null=True

@@ -3,8 +3,9 @@ from rest_framework.test import APITestCase
 from django_dynamic_fixture import G
 from .models import Employee
 
+
 # Create your tests here.
-class TestAppEndpoints(APITestCase):
+class TestEmployee(APITestCase):
 
     def test_employee_creation_auto_creates_related_profile(self):
         """
